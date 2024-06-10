@@ -1,0 +1,37 @@
+* {margin: 0;
+    padding: 0;}
+
+body {font-family: "Roboto", sans-serif;}
+
+h1 {font-family: "Roboto Slab", serif;
+    font-size: 24px;
+    margin: 10px 0px;
+}
+
+.card img{width: 220px;
+    height: 200px;
+    object-fit: contain;}
+
+button {width: 20px;
+    height: 20px;
+    border: none;
+    margin-top: 6px;
+    background-color: rgb(226, 253, 236);}
+
+button:hover { background-color: rgb(183, 226, 199);}
+
+button:active { background-color: rgb(153, 204, 172);}
+
+
+.card {margin: 10px;
+    border: 1px solid rgb(216, 216, 216);
+display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: -10px 12px 12px 0 rgba(122, 122, 122, 0.5);} 
+
+.contenidocard {padding: 10px;}
+
+.preciocompra {padding: 10px 0px;}
+
+.contenedor {display: flex;}

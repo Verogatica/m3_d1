@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="card">
+        <img src="assets/img/ipad1.png" />
+        <div class="contenidocard">
+          <h1>iPad air 2024 m2</h1>
+          <p>Precio base: <span id="precio">precio</span></p>
+          <p>Cantidad: <span id="cantidad">cantidad</span></p>
+          <button onclick="aumentarCantidad()">+</button>
+          <button onclick="disminuirCantidad()">-</button>
+
+          <div class="preciocompra">
+            <p>Total: <span id="total">0</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/img/ipad2.png" />
+        <div class="contenidocard">
+          <h1>iPad pro 2024 m4</h1>
+          <p>Precio base:<span id="precioSegundo">precio</span></p>
+          <input
+            type="range"
+            id="inputCantidad"
+            value="0"
+            max="10"
+            onchange="actualizarCantidad()"
+          />
+          <button onclick="aumentarInput()">+</button>
+          <button onclick="disminuirInput()">-</button>
+          <div class="preciocompra">
+            <p>Total: <span id="totalSegundo">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
